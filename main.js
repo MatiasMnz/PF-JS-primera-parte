@@ -1,7 +1,8 @@
+alert("Bienvenidos a nuestro simulador interactivo , aqui podras realizar calculos de hasta 3 cifras y encontraras 4 resultados segun nuestras opciones" )
 let num1 = parseFloat(prompt("Ingrese el valor que desea calcular"))
 let num2 = parseFloat(prompt("Ingrese el segundo valor que desea calcular"))
 let num3 = parseFloat(prompt("ingrese el tercer valor que desea calcular"))
-let operador = parseFloat(prompt("ingrese el operador que desea utilizar para operar las opciones son (+,-,*,/)"))
+let operador = parseFloat(prompt("ingrese algun operador para obtener los resultados , las opciones son (+,-,*,/)"))
 function calcular(num1,num2,num3,operador) {
     switch (operador) {
         case "+":
@@ -21,11 +22,14 @@ function calcular(num1,num2,num3,operador) {
 }
 if ("+") {
     alert(calcular(num1,num2,num3,"+"))
-}else if ("-") {
+}
+if ("-") {
     alert(calcular(num1,num2,num3,"-"))
-} else if ("*") {
+}
+if ("*") {
     alert(calcular(num1,num2,num3,"*"))
-} else if ("/"){
+}
+if ("/"){
     alert(calcular(num1,num2,num3,"/"))
 }
 
